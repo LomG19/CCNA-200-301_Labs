@@ -1,42 +1,39 @@
-# OSPF Lab1 – Dynamic Routing with Packet Tracer
-
-## Objective
-
-Configure and verify OSPF (Open Shortest Path First) dynamic routing between three routers to enable full network connectivity.
-
-## Topology Overview
-
-- 3 Routers (R1, R2, R3)
-- 3 Network segments
-- Each router connected to one or two networks
-- Use OSPF process ID 1
-- Set router IDs manually for clarity
-
-![Topology](./images/ospf-topology.png)
+# 🌐 OSPF Lab – CCNA 200-301  
+**Author:** Mugisha Loic  
 
 ---
 
-## ⚙️ Basic IP Schema
-
-| Device | Interface    | IP Address     | Connected To |
-|--------|--------------|----------------|--------------|
-| R1     | G0/0         | 192.168.10.1/24 | PC1          |
-| R1     | G0/1         | 10.0.0.1/30     | R2 (G0/1)    |
-| R2     | G0/1         | 10.0.0.2/30     | R1 (G0/1)    |
-| R2     | G0/0         | 10.0.0.5/30     | R3 (G0/1)    |
-| R3     | G0/1         | 10.0.0.6/30     | R2 (G0/0)    |
-| R3     | G0/0         | 192.168.30.1/24 | PC3          |
+## 🧠 Objective  
+- Configure and verify OSPF on 3 routers  
+- Ensure proper routing between all networks  
+- Use clean subnetting and assign proper router IDs  
 
 ---
 
-## 🔧 OSPF Configuration Summary
+## 🖥️ Topology Overview  
+*(Insert topology image if available)*
 
-Apply the following on each router:
+![OSPF Topology](./images/OSPF-LAB1-Topology.png)
 
-### 🔹 R1 Configuration
+---
+
+## 📚 Lab Details  
+
+| Device | Interfaces | IP Addresses              |
+|--------|------------|---------------------------|
+| R1     | G0/0, G0/1 | 192.168.10.1 / 10.0.0.1   |
+| R2     | G0/0, G0/1 | 10.0.0.2 / 172.16.0.1     |
+| R3     | G0/0       | 172.16.0.2                |
+
+> Each router connects to two directly connected networks and runs OSPF process ID 1.
+
+---
+
+## ⚙️ OSPF Configuration Snippets
+
+### 🔹 R1 OSPF
 ```bash
 router ospf 1
  router-id 1.1.1.1
  network 192.168.10.0 0.0.0.255 area 0
  network 10.0.0.0 0.0.0.3 area 0
-
