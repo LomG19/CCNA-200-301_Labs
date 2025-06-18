@@ -1,23 +1,23 @@
-# 🌐 OSPF Lab – CCNA 200-301  
+# OSPF Lab – CCNA 200-301  
 **Author:** Mugisha Loic  
 
 ---
 
-## 🧠 Objective  
+##  Objective  
 - Configure and verify OSPF on 4 routers  
 - Ensure proper routing between all networks  
 - Use clean subnetting and assign proper router IDs.
-- Set interface that aren't facing other routers 
+- Set interfaces that aren't facing other routers 
 
 ---
 
-## 🖥️ Topology Overview  
-*(Insert topology image if available)*
+## Topology Overview  
+
 
 ![OSPF Topology](./Images/OSPF-LAB1-Topology.png)
 
 ---
-## 🔧 Pre-Configuration Summary  
+## Pre-Configuration Summary  
 Before enabling OSPF, the following configurations were completed on all routers:
 - Assigned hostnames (`R1`, `R2`, `R3`)
 - Configured interface IP addresses and subnet masks
