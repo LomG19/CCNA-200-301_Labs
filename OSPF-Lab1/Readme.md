@@ -14,7 +14,7 @@
 ## 🖥️ Topology Overview  
 *(Insert topology image if available)*
 
-![OSPF Topology](./images/OSPF-LAB1-Topology.png)
+![OSPF Topology](./Images/OSPF-LAB1-Topology.png)
 
 ---
 ## 🔧 Pre-Configuration Summary  
