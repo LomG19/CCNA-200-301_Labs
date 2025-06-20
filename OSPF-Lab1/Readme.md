@@ -7,7 +7,7 @@
 - Configure and verify OSPF on 4 routers  
 - Ensure proper routing between all networks  
 - Use clean subnetting and assign proper router IDs.
-- Set interfaces that aren't facing other routers as passive.
+- Set interfaces that aren't facing other routers as passive to avoid unwanted neighbor relationships.
 - Set one router connecting to the ISP as the ASBR.
 
 ---
