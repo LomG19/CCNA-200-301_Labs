@@ -25,4 +25,4 @@
 | **Trunking** | Allows multiple VLANs to traverse a single link. Ensures proper VLAN encapsulation (802.1Q). | Explicitly set **Native VLAN 1000** for security. Explicitly disable DTP. |
 | **Inter-VLAN Routing** | Configured on the Distribution/Core layers to allow traffic to flow between different VLANs (e.g., PCs to Servers). | Implemented using **Switched Virtual Interfaces (SVIs)** on the Distribution layer. |
 | **Layer-3 EtherChannel** | Aggregates links between Core Switches for **high-speed backbone connectivity** and routing adjacency. | Configured using **PAgP** and assigned L3 IP addresses. |
-| **Secure Management** | Secure access to devices. | **Enable Secret** configured, **Local User Authentication** on console line, **Unused Ports Disabled**. |
+| **Secure Management** | Secure access to devices. | **Enable Secret** configured, **Local User Authentication** on console line. Used the Type 9 (Scrypt) hashing algorithm on all supported devices, and MD5 on others. **Unused Ports Disabled**. |
