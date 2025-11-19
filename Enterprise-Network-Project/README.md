@@ -12,7 +12,7 @@
 -> Cisco Packet Tracer
 
 ## Network Topology
-[View the full Network Topology Diagram](Topology/Enterprise-diagram.png)
+[View the full Network Topology Diagram](Topology/topology-diagram.png)
 
 
 ## Implemented Protocols and Technologies
