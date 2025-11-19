@@ -1,0 +1,52 @@
+!
+hostname ASW-B2
+!
+enable secret 5 $1$mERr$LG1PCX0pnG7g1VqYOLG9a/
+!
+!
+!
+!
+username cisco secret 5 $1$mERr$Bok4KDfVutXOJolNq009M/
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+ switchport nonegotiate
+ switchport voice vlan 20
+!
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,99
+ switchport mode trunk
+ switchport nonegotiate
+!
+interface GigabitEthernet0/2
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,99
+ switchport mode trunk
+ switchport nonegotiate
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan99
+ ip address 10.0.0.21 255.255.255.240
+!
+ip default-gateway 10.0.0.17
+!
+!
+!
+!
+line con 0
+ login local
+ exec-timeout 30 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
