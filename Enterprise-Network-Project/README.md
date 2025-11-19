@@ -1,6 +1,6 @@
 # Enterprise Network Lab - CCNA Practice Project
 
-> A hands-on simulation of a two-branch enterprise network designed using the hierarchical model (Core, Distribution, Access).
+ A hands-on simulation of a two-branch enterprise network designed using the hierarchical model (Core, Distribution, Access).
 
 ## Objective
 
